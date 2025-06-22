@@ -1,0 +1,11 @@
+tensorflow
+keras-tuner
+scikeras
+xgboost
+lightgbm
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+joblib
