@@ -1,21 +1,15 @@
 # 🏔️ Landslide Detection Using Multi-Band Satellite Imagery
 
-## Overview
-
-This project develops a robust machine learning pipeline to detect landslides from multi-band satellite imagery data. It combines deep learning (CNN) with boosting models (XGBoost, LightGBM) and a stacking ensemble to improve classification performance.
-
-The data consists of multi-band satellite images with 12 spectral bands (including optical and radar bands). The task is to classify each image as either **Landslide** or **No Landslide**.
-
----
-
 ## 📌 Project Overview
 
-This project focuses on classifying whether an area is affected by a landslide or not using .npy image files that contain 12 different satellite image bands. It includes
+This project builds a robust machine learning pipeline for detecting landslides using satellite imagery with 12 spectral bands, including both optical and radar data. The goal is to classify each image as either **Landslide** or **No Landslide**.
 
-- A custom Keras CNN with hyperparameter tuning  
-- Feature engineering for traditional ML models  
-- Boosting with XGBoost and LightGBM  
-- A final stacking ensemble for enhanced performance  
+To achieve high accuracy, the pipeline integrates:
+
+- A custom Convolutional Neural Network (CNN) built with Keras and tuned using Keras Tuner  
+- Feature engineering to extract statistical and spectral features from image bands  
+- Boosting models using XGBoost and LightGBM  
+- A final stacking ensemble that combines deep learning and boosting predictions for improved performance  
 
 ---
 
@@ -45,7 +39,7 @@ joblib, Google Colab, Google Drive
 ### 2. 🧠 Model 1: CNN (Keras)
 
 - Trained on 12-band satellite images  
-- Custom data generator with on-the-fly augmentation  
+- Custom data generator with augmentation  
 - Keras Tuner for hyperparameter search  
 - F1 Score-based model checkpointing
 
